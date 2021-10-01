@@ -9,11 +9,11 @@ namespace HomeworkClassesSS
      public class Factory
     {
         public string Name { get; set; }
-        private Employer[] employeers = new Employer[5];
+        private Employee[] employeers = new Employee[5];
         private Product[] products = new Product[20];
        
 
-        public Employer[] Employers
+        public Employee[] Employers
         {
             get
             {

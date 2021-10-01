@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace HomeworkClassesSS
 {
-    public class Employer
+    public class Employee
     {
         public string Name { get; set; }
         public string Surname { get; set; }
         public DateTime Date { get; }            
         public decimal Salary { get; set; }
 
-        public Employer(string name,string surname, DateTime date,decimal salary)
+        public Employee(string name,string surname, DateTime date,decimal salary)
         {
-             Name = name; ;
+            Name = name;
             Surname=surname;
             Date=date;
-
+            Salary = salary;
 
         }
     }

@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace HomeworkClassesSS
 {
-   public class Product
+    public enum ProductType { Grocery, Alcohol, Chemicals, Beauty }
+    public class Product
     {
+         private readonly DateTime date;
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public ProductType ProductType { get; set; }
+
+        public Product(ProductType productType,DateTime dateTime)
+        {
+            ProductType = productType;
+            date = dateTime;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name}--{Price}--{ProductType}--{date.ToShortDateString()}";
+        }
+
     }
 }
