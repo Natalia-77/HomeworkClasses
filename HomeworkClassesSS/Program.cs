@@ -12,9 +12,11 @@ namespace HomeworkClassesSS
                 Name = "Ahmad tea",
                 Price = 28.45M
             };
+
             //Console.WriteLine(product.ToString());
             Factory factory = new Factory("Willy Wonca");
             factory.AddEmployee();
+            factory.AddProduct();
             factory.Show();
 
            
