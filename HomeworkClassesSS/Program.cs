@@ -18,6 +18,8 @@ namespace HomeworkClassesSS
             factory.AddEmployee();
             factory.AddProduct();
             factory.Show();
+            Console.WriteLine(factory.GetTotalSalary());
+            Console.WriteLine(factory.GetAvgSalary());
 
            
 

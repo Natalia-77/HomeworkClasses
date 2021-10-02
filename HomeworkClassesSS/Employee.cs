@@ -21,5 +21,6 @@ namespace HomeworkClassesSS
             Salary = salary;
 
         }
+        
     }
 }

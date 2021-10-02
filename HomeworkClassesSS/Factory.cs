@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeworkClassesSS
 {
-     public class Factory
+     partial class Factory
     {
         public string Name { get; set; }
         public Employee[] Employee { get; set; }
@@ -24,8 +24,11 @@ namespace HomeworkClassesSS
                new Employee("Stepan","Boroda",new DateTime(1985,05,05),12300)
 
             };
+            
 
         }
+
+       
 
         public void AddProduct()
         {
