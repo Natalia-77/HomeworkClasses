@@ -47,10 +47,7 @@ namespace HomeworkClassesSS
             return Employee.Length;
         }
 
-        public void AddEmployeersArray()
-        {
-
-        }
+       
 
 
     }

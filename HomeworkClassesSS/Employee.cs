@@ -13,14 +13,23 @@ namespace HomeworkClassesSS
         public DateTime Date { get; }            
         public decimal Salary { get; set; }
 
-        public Employee(string name,string surname, DateTime date,decimal salary)
+        public Employee(DateTime date)
+        {
+            Date = date;
+        }
+        public Employee(string name, string surname, decimal salary)
         {
             Name = name;
-            Surname=surname;
-            Date=date;
+            Surname = surname;
             Salary = salary;
 
         }
+        public Employee(string name, string surname, DateTime date, decimal salary):this(name,surname,salary)
+        {
+            Date = date;
+        }
+
+       
         
     }
 }
