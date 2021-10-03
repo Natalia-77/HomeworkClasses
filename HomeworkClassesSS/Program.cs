@@ -26,6 +26,7 @@ namespace HomeworkClassesSS
             //Console.WriteLine(factory.GDP());
             Console.WriteLine("=============\n");
             factory.AddEmployeersArray();
+            factory.AddProductArray();
             factory.Show();
 
            

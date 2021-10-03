@@ -108,10 +108,10 @@ namespace HomeworkClassesSS
                 Console.WriteLine($"{item.Name} {item.Surname} BirthDay:{item.Date.ToShortDateString()} salary:{item.Salary} UAH");
             }
 
-            //foreach (var product in Products)
-            //{
-            //    Console.WriteLine($"{product.Name} {product.Price} Type:{product.ProductType} Product date:{product.date.ToShortDateString()}");
-            //}
+            foreach (var product in Products)
+            {
+                Console.WriteLine($"{product.Name} {product.Price} Type:{product.ProductType} Product date:{product.date.ToShortDateString()}");
+            }
         }
        
 

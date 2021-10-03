@@ -14,12 +14,21 @@ namespace HomeworkClassesSS
         public decimal Price { get; set; }
         public ProductType ProductType { get; set; }
 
-        public Product(ProductType productType,DateTime dateTime)
+        //public Product(ProductType productType,DateTime dateTime)
+        //{
+        //    ProductType = productType;
+        //    date = dateTime;           
+        //}
+        public Product( DateTime dateTime)
+        {
+            
+            date = dateTime;
+        }
+        public Product(ProductType productType, DateTime dateTime):this(dateTime)
         {
             ProductType = productType;
-            date = dateTime;           
+           
         }
-        
 
         public override string ToString()
         {
