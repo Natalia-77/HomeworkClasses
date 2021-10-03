@@ -22,12 +22,34 @@ namespace HomeworkClassesSS
         {
             // int count = 0;
             decimal res2 = 0;
-           int count= Employee.Count();
+           int count= Employee.Length;
             foreach (var item in Employee)
             {
                 res2 += item.Salary;
             }
             return res2 / count;
+        }
+
+        public decimal GDP()
+        {
+            decimal prod_sum = 0;
+            int count_empl = EmployeeCount();
+                foreach (var item in Products)
+            {
+                prod_sum += item.Price;
+            }
+            return prod_sum / count_empl;
+            
+        }
+
+        public int EmployeeCount()
+        {
+            return Employee.Length;
+        }
+
+        public void AddEmployeersArray()
+        {
+
         }
 
 

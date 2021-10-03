@@ -14,12 +14,17 @@ namespace HomeworkClassesSS
             };
 
             //Console.WriteLine(product.ToString());
+
             Factory factory = new Factory("Willy Wonca");
             factory.AddEmployee();
             factory.AddProduct();
             factory.Show();
+            Console.WriteLine("=============\n");
             Console.WriteLine(factory.GetTotalSalary());
             Console.WriteLine(factory.GetAvgSalary());
+            Console.WriteLine(factory.EmployeeCount());
+            Console.WriteLine(factory.GDP());
+            Console.WriteLine("=============\n");
 
            
 
